@@ -1,0 +1,16 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:rep="http://reporting.ws.murex/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <rep:runDapReportNow>
+         <arg0>fxmm_trade_query</arg0>
+         <Filter>
+	    <counterparties>
+		<item>COMPANY A</item>
+		<item>COMPANY B</item>
+		<item>COMPANY C</item>
+	    </counterparties>
+         </Filter>
+         <arg2>500</arg2>
+      </rep:runDapReportNow>
+   </soapenv:Body>
+</soapenv:Envelope>

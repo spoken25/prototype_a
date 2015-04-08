@@ -1,0 +1,826 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+   <env:Header/>
+   <env:Body>
+      <ns2:indicativePricingWithLimitsResponse xmlns:ns2="http://pricing.distribution.ws.murex/">
+         <ProductEvaluationWithLimits>
+            <xmlProduct productId="Outright">
+               <inputs>
+                  <input value="EUR/USD" name="Instrument"/>
+                  <input value="EUR" name="Quantity currency"/>
+                  <input value="2000000" name="Nominal"/>
+                  <input value="USD" name="  quantity currency"/>
+                  <input value="Buy" name="B/S"/>
+                  <input value="COMPANY B" name="Counterpart"/>
+                  <input value="3m" name="Maturity period"/>
+                  <input value="user1" name="W_USER"/>
+                  <input name="Other quantity currency"/>
+                  <input name="Portfolio"/>
+                  <input name="Maturity"/>
+                  <input name="DIST_RFQ"/>
+               </inputs>
+               <outputs>
+                  <output value="EUR/USD" name="Instrument"/>
+                  <output value="EUR" name="Quantity currency"/>
+                  <output value="USD" name="Other quantity currency"/>
+                  <output value="Buy" name="B/S"/>
+                  <output value="EUR" name="Traded nominal unit"/>
+                  <output value="Buy" name="Traded buy/sell"/>
+                  <output value="2000000" name="Traded nominal"/>
+                  <output value="2000000" name="Nominal"/>
+                  <output value="2739400" name="Other nominal"/>
+                  <output value="COMPANY B" name="Counterpart"/>
+                  <output value="FWD_EUR_LN" name="Portfolio"/>
+                  <output value="1.369700000000" name="Ref spot"/>
+                  <output value="5.000000000000" name="Swap points"/>
+                  <output value="0.0005" name="Sales margin"/>
+                  <output value="1.3697" name="Price"/>
+                  <output value="EUR-USD" name="Price quotation"/>
+                  <output value="20121227" name="Maturity"/>
+                  <output value="3m" name="Maturity period"/>
+                  <output value="999" name="VAAMT"/>
+                  <output value="USD" name="VAAMTCCY"/>
+                  <output value="Buy 2,000,000 EUR against USD on 27 dec 2012 @ 1.3702" name="DIST_DESC"/>
+                  <output value="user1" name="W_USER"/>
+               </outputs>
+            </xmlProduct>
+            <messages>
+               <message value="|Nominal is too high, it should be below Tier 2 maximum nominal ( 600,000 EUR or equivalent )|Nominal|   (Leg &quot;Spot/Forward#1_8&quot;)" level="WARNING" code="external"/>
+               <message value="|The trade is not tradable, see other messages for more details||   (Leg &quot;Spot/Forward#1_8&quot;)" level="WARNING" code="external"/>
+            </messages>
+            <limitsResult>
+               <level>Accepted</level>
+               <compilation_lines>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CURR | FXD | FXD | F" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR | FXD | FXD | F ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="CollateralizedCount">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CURR" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="CollateralizedCount">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CURR | FXD | FXD | F" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR | FXD | FXD | F ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="CollateralizedCountRatio">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CURR" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="CollateralizedCountRatio">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CURR | FXD | FXD | F" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR | FXD | FXD | F ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="CollateralizedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CURR" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="CollateralizedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CURR | FXD | FXD | F" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR | FXD | FXD | F ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="CollateralizedExposureRatio">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CURR" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="CollateralizedExposureRatio">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="35.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CURR | FXD | FXD | F" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR | FXD | FXD | F ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="1.0" column_type="0" column="NonCollateralizedCount">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="248.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CURR" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="1.0" column_type="0" column="NonCollateralizedCount">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="468212.95" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CURR | FXD | FXD | F" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR | FXD | FXD | F ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="-63360.43" column_type="2" column="NonCollateralizedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="7072298.96" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CURR" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="-63360.43" column_type="2" column="NonCollateralizedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="35.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CURR | FXD | FXD | F" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR | FXD | FXD | F ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="1.0" column_type="0" column="TotalCount">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="248.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CURR" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="1.0" column_type="0" column="TotalCount">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="468212.95" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CURR | FXD | FXD | F" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR | FXD | FXD | F ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="-63360.43" column_type="2" column="TotalExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Void" severity="-1" risk_type="2" risk="CollateralStatistics" reason="-1" postPosition="7072298.96" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CURR" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CURR ) " dimension_2="ProductTypes" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="-63360.43" column_type="2" column="TotalExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.63042903944E9" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.6304028622E9" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.58227362579E9" pillar="1M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/25T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.56392581274E9" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.25911333201E9" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.16169798636E9" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.08379541317E9" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.05983037006E9" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="9.1339517006E8" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="8.472047E8" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="6.9009115E8" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Counterparty_Notional" reason="-1" postPosition="1.37015E7" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.535665728E7" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.5347985E7" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.485403718E7" pillar="1M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/25T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.485375676E7" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.459368949E7" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.218336927E7" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.1304438E7" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.0902265E7" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.0275E7" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="9555000.0" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="7740000.0" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="150000.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1053575.14" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1053575.14" pillar="2OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/27T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="587027.33" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="587027.33" pillar="2W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/09T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="587027.33" pillar="4W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/23T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="587027.33" pillar="6W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/06T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="572927.33" pillar="2M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/26T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="572927.33" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="572927.33" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="27394.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="238100.0" pillar="9M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/06/25T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="210000.0" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="210000.0" pillar="18M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/03/25T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="AddonNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.073087012E7" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.073084302E7" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.069391292E7" pillar="1M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/25T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.069391259E7" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.038622435E7" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="4844515.75" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="3869972.81" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="3408381.35" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2863051.73" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2393162.3" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1825102.33" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="20078.24" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="376708.61" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="376708.61" pillar="2OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/27T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="233239.05" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="233239.05" pillar="2W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/09T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="233239.05" pillar="4W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/23T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="233239.05" pillar="6W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/06T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="233078.29" pillar="2M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/26T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="233078.29" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="233078.29" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="1893.48" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="33951.6" pillar="9M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/06/25T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="10121.38" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="10121.38" pillar="18M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/03/25T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="MVNet">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.566775819E7" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.565905881E7" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.548176006E7" pillar="1M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/25T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.548147931E7" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.49137238E7" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.696169527E7" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.507141554E7" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.430564635E7" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.313805173E7" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.19481623E7" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="9565102.33" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="170078.24" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="964341.94" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="20342.55" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="964341.94" pillar="2OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/27T12:00:00" contrib="20342.55" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="702405.24" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="702405.24" pillar="2W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/09T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="702405.24" pillar="4W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/23T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="702405.24" pillar="6W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/06T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="701145.21" pillar="2M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/26T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="701145.21" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="701145.21" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="29287.48" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="174388.77" pillar="9M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/06/25T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="122126.11" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="122126.11" pillar="18M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/03/25T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="MitigatedExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.566775819E7" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.565905881E7" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.548176006E7" pillar="1M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/25T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.548147931E7" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="2.49137238E7" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.696169527E7" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.507141554E7" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.430564635E7" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.313805173E7" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="1.19481623E7" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="9565102.33" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="170078.24" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="964341.94" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="20342.55" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="964341.94" pillar="2OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/27T12:00:00" contrib="20342.55" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="702405.24" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="702405.24" pillar="2W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/09T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="702405.24" pillar="4W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/23T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="702405.24" pillar="6W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/06T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="701145.21" pillar="2M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/26T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="701145.21" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="701145.21" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="29287.48" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="174388.77" pillar="9M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/06/25T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="122126.11" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="122126.11" pillar="18M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/03/25T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="NetExposure">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="1M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/26T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/09/27T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/02T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/09T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="4W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/10/23T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="6W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/06T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/11/26T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/03/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="9M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/06/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2013/09/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="18M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/03/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2014/09/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2017/09/25T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2022/09/26T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2027/09/27T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2032/09/27T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Fine" severity="-1" risk_type="0" risk="Counterparty_PreSettlement" reason="-1" postPosition="0.0" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="false" hidden="false" group="FX ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2169/11/13T12:00:00" contrib="0.0" column_type="0" column="PsrCollateralValue">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="" severity="-1" risk_type="1" risk="Counterparty_Settlement" reason="-1" postPosition="1.875102576E7" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/27T12:00:00" contrib="-2739400.0" column_type="2" column="Flows">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="" severity="-1" risk_type="1" risk="Counterparty_Settlement" reason="-1" postPosition="3.085052739E7" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="0.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1="COMPANY B" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Counterparties" date="2012/12/27T12:00:00" contrib="2000000.0" column_type="0" column="Positive_Flows">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="4.06419963796E9" pillar="1OD" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2012/09/26T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="4.05882306072E9" pillar="1W" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2012/10/02T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="3.70990132578E9" pillar="1M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2012/10/25T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="3.68756873702E9" pillar="3M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2012/12/25T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="2.90182974188E9" pillar="6M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2013/03/25T12:00:00" contrib="2739400.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="2.78519633919E9" pillar="12M" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2013/09/25T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="2.59411921884E9" pillar="2Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2014/09/25T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="2.37885432476E9" pillar="5Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2017/09/25T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="9.3876776896E8" pillar="10Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2022/09/26T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="8.4804802273E8" pillar="15Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2027/09/27T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="6.9355716591E8" pillar="20Y" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2032/09/27T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+                  <compilation_line viewed_by="" timeBuckets="Generic" severity="-1" risk_type="3" risk="Trader_Notional" reason="-1" postPosition="1.377916591E7" pillar="Inf" overflowIndex="-1" min_percent_used="0.0" min_percent_available="0.0" minCurrency="USD" max_percent_used="0.0" max_percent_available="100.0" max_available="0.0" maxCurrency="USD" key_2="CE" key_1=">Unknown_Trader" impacted="true" hidden="false" group="All ( CE ) " dimension_2="Entities" dimension_1="Traders" date="2169/11/13T12:00:00" contrib="0.0" column_type="2" column="Notional">
+                     <limit_min/>
+                     <limit_max/>
+                  </compilation_line>
+               </compilation_lines>
+            </limitsResult>
+         </ProductEvaluationWithLimits>
+      </ns2:indicativePricingWithLimitsResponse>
+   </env:Body>
+</env:Envelope>

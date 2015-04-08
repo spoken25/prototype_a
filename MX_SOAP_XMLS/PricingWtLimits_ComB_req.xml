@@ -1,0 +1,21 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pric="http://pricing.distribution.ws.murex/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <pric:indicativePricingWithLimits>
+	<XmlProduct productId="Outright">
+		<inputs>
+			<input name="Instrument" value="EUR/USD"/>
+			<input name="Quantity currency" value="EUR"/>
+			<input name="Nominal" value="2000000"/>
+			<input name="quantity currency" value="USD"/>
+			<input name="B/S" value="Buy"/>
+			<input name="Counterpart" value="COMPANY B"/>
+			<input name="Maturity period" value="3m"/>
+			<input name="W_USER" value="user1"/>
+		</inputs>
+	</XmlProduct>
+	<ConnectedToRealtime  xmlns="">true</ConnectedToRealtime>
+	<Timeout duration="2" timeUnit="Minutes"/>
+      </pric:indicativePricingWithLimits>
+   </soapenv:Body>
+</soapenv:Envelope>
